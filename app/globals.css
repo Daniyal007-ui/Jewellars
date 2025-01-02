@@ -25,3 +25,7 @@ body {
     text-wrap: balance;
   }
 }
+.wrapper{
+
+  @apply  max-w-7xl mx-4 sm:mx-6 md:mx-auto
+}
