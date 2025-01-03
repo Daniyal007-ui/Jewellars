@@ -132,19 +132,20 @@ const ProductDetailsClient = ({ product, products }: ProductDetailsClientProps) 
 
       {/* Related Products */}
       <div className="mt-[120px]">
-        <h2 className="text-center my-[50px] font-semibold text-black text-[30px]">
-          You may also like
-        </h2>
-        <div className="relative marquee space-x-12 h-[400px]  overflow-x-hidden">
-          <div className="absolute  will-change-transform  hover:paused animate-marquee w-[200%]">
-            {products.map((product) => (
-              <div className="product-card  inline-block" key={product._id}>
-                <Product product={product} />
-              </div>
-            ))}
-          </div>
+  <h2 className="text-center my-[50px] font-semibold text-black text-[30px]">
+    You may also like
+  </h2>
+  <div className="relative animate-marquee space-x-12 h-auto overflow-x-auto">
+    <div className="flex flex-nowrap space-x-6   will-change-transform  hover:paused animate-marquee  w-auto">
+      {products.map((product) => (
+        <div className=" inline-block" key={product._id}>
+          <Product product={product} />
         </div>
-      </div>
+      ))}
+    </div>
+  </div>
+</div>
+
     </div>
   );
 };

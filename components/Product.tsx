@@ -21,7 +21,7 @@ interface ProductProps {
 
 const Product: React.FC<ProductProps> = ({ product: { image, name, slug, price } }) => {
   // Ensure you're getting a valid URL for the image
-  const imageUrl = image && image.length > 0 ? urlFor(image[0]).url() : '/default-image.png';
+  const imageUrl = image && image.length > 0 ? urlFor(image[0]).url() : '/default-image.webp';
 
   // Correct object destructuring
   
