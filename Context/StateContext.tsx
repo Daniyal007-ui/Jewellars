@@ -9,6 +9,13 @@ const Context = createContext<any>(undefined);
 
 export const StateContext = ({ children }:any) => {
     const [showCart, setShowCart] = useState (false);
+
+
+
+
+
+
+    
     const [cartItems, setCartItems] = useState<any[]>([]);
     const [totalPrice, setTotalPrice] = useState<number>(0);
     const [totalQuantities, setTotalQuantities] =  useState<number>(0);

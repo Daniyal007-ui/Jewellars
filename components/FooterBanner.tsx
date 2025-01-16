@@ -24,7 +24,7 @@ type FooterBannerProps = {
 export default function FooterBanner({ bannerData }: FooterBannerProps) {
   return (
     <main className="bg-black rounded-[20px]">
- <div className="wrapper p-[70px_40px] bg-black rounded-[15px] relative md:h-[400px] h-auto leading-[1] text-white w-full mt-[120px]">
+ <div className="wrapper p-[70px_40px] bg-black rounded-[15px] relative md:h-[500px] h-auto leading-[1] text-white w-full mt-[120px]">
   <div className="flex justify-start  ">
     {/* left */}
     <div className="flex flex-col md:mb-0 mb-28 md:mt-0 mt-40">
@@ -55,9 +55,9 @@ export default function FooterBanner({ bannerData }: FooterBannerProps) {
     <div className="flex justify-end items-end">
     <Image src={urlFor(bannerData.image).url()}
     alt=""
-    width={350}
-    height={350}
-    className="absolute md:w-[350px] w-[200px] md:h-auto h-[250px] md:top-[-25%] top-[-15%] md:right-20  hover:border-[2px] hover:border-white rounded-[20px]" 
+    width={200}
+    height={200}
+    className="absolute  md:h-auto sm:h-[250px]   md:right-20  hover:border-[2px] hover:border-white rounded-[20px]" 
     />
   </div>
  

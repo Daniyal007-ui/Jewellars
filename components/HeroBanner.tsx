@@ -20,7 +20,7 @@ type HeroBannerProps = {
 export default function HeroBanner({ bannerData }: HeroBannerProps) {
   return (<main className="bg-black rounded-[20px]">
  
-    <div className="wrapper px-4 py-10 bg-black rounded-lg mb-10 relative z-10 h-auto md:h-[500px] w-full">
+    <div className="wrapper px-4 py-10 bg-black rounded-lg mb-10 relative z-10 h-auto md:h-[800px] w-full">
       <div className="relative flex flex-col lg:flex-row items-center lg:items-start lg:justify-between h-full">
         {/* Text Content */}
         <div className="z-20 text-center lg:text-left lg:w-1/2 md:space-y-4 space-y-8 p-4">
@@ -54,9 +54,9 @@ export default function HeroBanner({ bannerData }: HeroBannerProps) {
           <Image
             src={urlFor(bannerData.image).url()}
             alt="Banner Product"
-            width={700}
-            height={690}
-            className="w-full h-auto md:h-full object-center rounded-lg"
+            width={600}
+            height={600}
+            className=" md:h-full object-center rounded-lg"
           />
         </div>
       </div>
